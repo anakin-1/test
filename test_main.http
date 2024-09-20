@@ -1,0 +1,40 @@
+###
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/test
+Accept: application/json
+
+###
+
+POST http://localhost:8000/test
+Content-Type: application/json
+
+{
+    "id": "1",
+    "name": "test name",
+    "title": "test title",
+    "description": "test desc"
+}
+
+###
+
+
+GET http://127.0.0.1:8000/get_models/2021
+Accept: application/json
+
+
+###
+
+
+GET http://127.0.0.1:8000/get_discontinued_models
+Accept: application/json
